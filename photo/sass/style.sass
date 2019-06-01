@@ -1,0 +1,295 @@
+/*-------------------------------------------------- FONTS --------------------------------------------------*/    
+@font-face 
+  font-family: 'Nav-font'
+  src:  url('..img/fonts/crimson-roman.woff') format('woff'), url('..img/fonts/crimson-roman.ttf') format('truetype')
+@import url('https://fonts.googleapis.com/css?family=Pacifico')
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display')
+/*-------------------------------------------------- BODY --------------------------------------------------*/
+body 
+    background-color: #f4f4f4
+    padding-bottom: 0 !important
+
+/*-------------------------------------------------- LOGO --------------------------------------------------*/
+.logo 
+    display: block
+    font-size: 30px
+    color: #000
+    font-weight: 400
+    text-decoration: none
+    padding-top: 30px
+    text-align: center
+    font-family: 'Pacifico', cursive
+    &:hover 
+        text-decoration: none
+        color: #000
+
+
+/*-------------------------------------------------- NAV --------------------------------------------------*/
+.top-nav 
+    font-family: 'Nav-font', Fallback, sans-serif
+    margin-top: 30px
+    .container 
+        height: 60px
+        border-top: 1px solid rgba(37,37,37,0.25)
+        border-bottom: 1px solid rgba(37,37,37,0.25)
+    &-menu 
+        padding-top: 16px
+        padding-left: 30px
+        padding-right: 30px
+        display: flex
+        ul 
+            font-size: 15px
+            font-weight: 300
+            color: rgba(37,37,37,0.75)
+            text-transform: uppercase
+            display: flex
+            list-style: none
+            li 
+                margin-left: 15px
+                &:first-child 
+                    margin-left: 0
+                a 
+                    color: rgba(37,37,37,0.75)
+                    text-decoration: none
+                &:hover 
+                    a 
+                        color: #DAA520
+                        opacity: 0.75
+        &-lang 
+            margin-left: 50px
+            display: flex
+            font-size: 15px
+            font-weight: 400
+            a 
+                color: rgba(37,37,37,0.75)
+                text-decoration: none
+                &:hover 
+                    color: #DAA520
+                    opacity: 0.75
+
+
+/*-------------------------------------------------- CONTENT --------------------------------------------------*/
+.content
+    padding-top: 50px
+    .col-md-4 
+        margin-bottom: 50px
+    img
+        width: 100%
+        height: 100%
+
+
+/*-------------------------------------------------- RUBRICS --------------------------------------------------*/
+.rubrics
+    &-item 
+        position: relative
+        &-photo 
+            box-shadow: 0 7px 20px rgba(0,0,0,.15)
+            transition: all .5s
+        &-text
+            text-align: center
+            position: absolute
+            width: 100%
+            top: calc(100% - 12px)
+            &-name
+                text-transform: uppercase
+                background-color: #fff
+                display: inline
+                padding: 10px
+        &:hover 
+            .rubrics-item-photo 
+                opacity: 0.9
+                box-shadow: 0 10px 20px rgba(0,0,0,.3)
+            .rubrics-item-text 
+                background-blend-mode: lighten
+                z-index: 1000
+                .rubrics-item-text-name 
+                    z-index: 1000
+                    color: #DAA520
+/*-------------------------------------------------- FOOTER --------------------------------------------------*/
+footer 
+    margin-top: 50px
+    text-align: center
+    padding-bottom: 20px
+    margin-bottom: 10px
+    .social-links 
+        margin-bottom: 20px
+        a 
+            margin-left: 10px
+            margin-right: 10px
+            color: #000
+            font-size: 30px
+            transition: all .3s
+            &:hover 
+                color: #DAA520
+                opacity: 0.6
+    .contacts 
+        color: #000
+        font-size: 20px
+        font-weight: 300
+        p 
+            margin-bottom: 5px
+/*-------------------------------------------------- RUBRIC --------------------------------------------------*/
+.desc 
+    font-family: 'Nav-font', Fallback, sans-serif
+    margin-top: 60px
+    margin-bottom: 40px
+    .desc-text
+        &-photo 
+            padding-left: 20px
+            padding-right: 20px
+            padding-bottom: 10px
+            height: 400px
+            float: right
+            img 
+                height: 100%
+        h2 
+            text-align: center
+            margin-bottom: 30px
+            color: rgba(37,37,37,0.75)
+            font-weight: 500
+            font-size: 30px
+        p 
+            margin-bottom: 4px
+            color: rgba(37,37,37,0.75)  
+            font-weight: 400    
+            font-size: 14px
+/*-------------------------------------------------- PRICE --------------------------------------------------*/
+.price 
+    margin-top: 40px
+    h2 
+        text-align: center
+        margin-bottom: 30px
+        color: rgba(37,37,37,0.75)
+        font-weight: 500
+        font-size: 30px
+    p 
+        margin-bottom: 30px
+        color: rgba(37,37,37,0.75)
+        font-weight: 400
+        font-size: 30px
+    .container 
+        justify-content: center
+        display: flex
+        flex-direction: row 
+        flex-wrap: wrap
+        .col-md-4 
+            margin-bottom: 50px
+    &-item 
+        border: 1px solid #e7caaa
+        &-title 
+            width: 100%
+            padding: 10px 0px 15px 0px
+            opacity: 0.9
+            font-family: 'Playfair Display', serif
+            background-color: #e7caaa
+            text-align: center
+            font-size: 30px
+            font-weight: 500
+        &-price 
+            width: 100%
+            font-family: 'Nav-font', Fallback, sans-serif
+            color: #777777
+            font-size: 40px
+            border-bottom: 1px solid #777777
+            text-align: center
+            font-weight: 300
+        &-desc
+            padding: 8px
+            width: 100%
+            font-family: 'Playfair Display', serif
+            color: #000000
+            font-size: 16px
+            border-bottom: 1px solid #777777
+            text-align: center
+            font-weight: 200
+            background-color: #dbdbdb
+            opacity: 0.5
+/*-------------------------------------------------- CONTACTS --------------------------------------------------*/
+.contacts 
+    margin-top: 50px
+    p 
+        margin-bottom: 25px
+        font-weight: 300
+        font-size: 14px
+        font-family: 'Nav-font', Fallback, sans-serif   
+    &-location
+        font-weight: 300
+        font-size: 14px
+        font-family: 'Nav-font', Fallback, sans-serif   
+        position: relative
+        padding-left: 40px
+        &:before 
+                content: ""
+                width: 35px
+                height: 30px
+                background-image: url(../img/social/map.png)
+                position: absolute
+                left: -2px
+                top: 15px
+                background-repeat: no-repeat
+                background-size: contain
+    &-phone
+        font-weight: 300
+        font-size: 14px
+        font-family: 'Nav-font', Fallback, sans-serif   
+        position: relative
+        padding-left: 40px
+        &:before 
+                content: ""
+                width: 35px
+                height: 30px
+                background-image: url(../img/social/phone.png)
+                position: absolute
+                left: -2px
+                top: -5px
+                background-repeat: no-repeat
+                background-size: contain
+    &-mail
+        font-weight: 300
+        font-size: 14px
+        font-family: 'Nav-font', Fallback, sans-serif   
+        position: relative
+        padding-left: 40px
+        &:before 
+                content: ""
+                width: 35px
+                height: 30px
+                background-image: url(../img/social/mail.png)
+                position: absolute
+                left: -2px
+                top: -5px
+                background-repeat: no-repeat
+                background-size: contain
+    &-skype
+        font-weight: 300
+        font-size: 14px
+        font-family: 'Nav-font', Fallback, sans-serif   
+        position: relative
+        padding-left: 40px
+        &:before 
+                content: ""
+                width: 35px
+                height: 30px
+                background-image: url(../img/social/skype.png)
+                position: absolute
+                left: -2px
+                top: -5px
+                background-repeat: no-repeat
+                background-size: contain
+    &-map 
+        margin-top: 70px
+/*-------------------------------------------------- ABOUT --------------------------------------------------*/
+.about 
+    margin-top: 50px
+    &-photo 
+        padding: 20px
+        height: 100%
+        float: left
+        img 
+            height: 100%
+            width: 100%
+    &-text 
+        padding-top: 20px
+        font-weight: 300
+        font-size: 14px
+        font-family: 'Nav-font', Fallback, sans-serif   
